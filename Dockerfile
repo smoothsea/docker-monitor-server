@@ -1,6 +1,6 @@
 #######################BUILD IMAGE##############
 FROM rust:1.42.0 as build
-ENV REFRESHED_AT 2020-10-29
+ENV REFRESHED_AT 2020-10-29-2
 RUN mkdir /app && cd /app && git clone https://github.com/smoothsea/monitor-server.git && cd monitor-server
 WORKDIR /app/monitor-server
 RUN rustup default nightly
